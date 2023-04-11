@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { storageDemo } from '~/logic/storage'
+import { appBcId } from '~/logic/storage'
 </script>
 
 <template>
@@ -8,10 +8,13 @@ import { storageDemo } from '~/logic/storage'
     <div>Options</div>
     <SharedSubtitle />
 
-    <input v-model="storageDemo" class="border border-gray-400 rounded px-2 py-1 mt-2">
+    <label mr="2">
+      <span>App Broadcast Channel ID:</span>
+    </label>
+    <input v-model="appBcId" class="border border-gray-400 rounded px-2 py-1 mt-2" text="xs">
 
     <div class="mt-4">
-      Powered by Vite <pixelarticons-zap class="align-middle inline-block" />
+      Powered by Vite <ri-device-line class="align-middle inline-block" />
     </div>
   </main>
 </template>
