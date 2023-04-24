@@ -3,7 +3,7 @@
   "displayName": "Your Popup",
   "version": "0.0.1",
   "private": true,
-  "packageManager": "pnpm@7.29.0",
+  "packageManager": "pnpm@8.3.1",
   "description": "Custom popup for your browser",
   "scripts": {
     "demo": "pnpm -C demo run dev",

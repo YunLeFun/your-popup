@@ -35,12 +35,12 @@ onMounted(async () => {
     <Logo />
     <div>Your Popup </div>
     <div>
-      <span op="70" text="xs">{{ appBcId }}</span>
+      <span op="70" text="xs">ID: {{ appBcId }}</span>
     </div>
     <!-- <SharedSubtitle /> -->
 
     <button class="btn mt-2" @click="openOptionsPage">
-      Open Options TODO
+      Open Options
     </button>
 
     <EventButtonGroup mt="2" :events-list="eventsList || []" />

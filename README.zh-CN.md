@@ -1,8 +1,7 @@
 # Your Popup (webext)
 
 <p align='center'>
-<b>English</b> | <a href="https://github.com/antfu/vitesse/blob/main/README.zh-CN.md">简体中文</a>
-<!-- Contributors: Thanks for getting interested, however we DON'T accept new transitions to the README, thanks. -->
+<a href="https://github.com/antfu/vitesse/blob/main/README.md">English</a> | <b>简体中文</b>
 </p>
 
 Register Popup in your browser.
@@ -11,24 +10,18 @@ Register Popup in your browser.
 
 ![usage](https://user-images.githubusercontent.com/25154432/234032965-19c37bd8-f1e2-496b-9c45-a67dfd1c001e.gif)
 
-<!-- todo chrome store link -->
-Install [your-popup](https://chrome.google.com/webstore/) and see this demo page.
-
 ## Why your-popup?
 
-When developing complex projects, I need to do a lot of things to reproduce a particular state, and now we can write the corresponding logic in a popup callback event for quick execution.
+在开发复杂项目时，我需要做很多操作以复现某种特殊状态，现在我们可以将对应的逻辑写在 popup 的回调事件里以快速执行。
 
-The form of the popup plug-in can avoid blocking the content of the page and does not affect the interaction of the page.
+而 popup 插件的形式可以避免遮挡页面内容，也不会影响页面的交互。
 
 ## Usage
 
-For details, see [demo](./demo) project usage.
+可参考 [demo](./demo) 项目用法。
 
 - 拷贝 `demo/src/popup` 文件夹内容
-- 在项目 `main.ts` 主入口（开发环境）引入 `popup` `register`
-
-- Copy the contents of the `demo/src/popup` folder
-- Introduce `popup` `register` in project `main.ts` (development environment)
+- 在项目 `main` 中（开发环境）引入 `popup` `register`
 
 ```ts
 // main.ts
@@ -44,10 +37,10 @@ if (import.meta.env.DEV) {
 
 > `customBcId` 可自定义，并保持与 popup option page 中配置一致。
 
-### Custom Events
+### 自定义事件
 
-You can customize any event in your project's `src/popup/events` array.
-But make sure the key value is unique.
+你可以在你项目的 `popup/events` 数组中自定义任意事件。
+但请确保 key 值惟一。
 
 ```ts
 import consola from 'consola'
