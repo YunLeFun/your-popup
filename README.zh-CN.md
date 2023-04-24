@@ -1,14 +1,18 @@
 # Your Popup (webext)
 
 <p align='center'>
-<a href="https://github.com/antfu/vitesse/blob/main/README.md">English</a> | <b>简体中文</b>
+<a href="https://github.com/YunLeFun/your-popup/blob/main/README.md">English</a> | <b>简体中文</b>
 </p>
 
 Register Popup in your browser.
 
 > 帮助开发人员在开发时通过弹出窗口快速调用特定函数逻辑。
 
-![Preview](https://user-images.githubusercontent.com/25154432/234032515-70f24a0d-e405-49d4-84c5-8002ff9d573a.jpg)
+![Preview]()
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/25154432/234032515-70f24a0d-e405-49d4-84c5-8002ff9d573a.jpg" alt="Preview" width="250" />
+</p>
 
 ![usage](https://user-images.githubusercontent.com/25154432/234032965-19c37bd8-f1e2-496b-9c45-a67dfd1c001e.gif)
 
