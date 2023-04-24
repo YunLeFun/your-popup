@@ -13,7 +13,7 @@ async function sendEventKey(key: string) {
     return
 
   const res = await browser.tabs.sendMessage(activeTabId, {
-    type: 'dev-webext',
+    type: 'your-popup',
     name: 'event',
     key,
   })

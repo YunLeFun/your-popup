@@ -8,7 +8,7 @@ import type { DevEvent } from '~/types'
 // const [show, toggle] = useToggle(false)
 // widget in html
 
-const bc = new BroadcastChannel('dev-webext')
+const bc = new BroadcastChannel('your-popup')
 
 // todo refactor
 const afBc = computed<BroadcastChannel>(() => {
@@ -30,7 +30,7 @@ browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
 
 bc.onmessage = async (event) => {
   const { data } = event
-  if (data.type === 'dev-webext' && data.name === 'register') {
+  if (data.type === 'your-popup' && data.name === 'register') {
     // register onMessage
     browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
       if (request.name === 'mounted') {

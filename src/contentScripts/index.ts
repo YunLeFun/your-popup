@@ -6,11 +6,11 @@ import { setupApp } from '~/logic/common-setup'
 
 // Firefox `browser.tabs.executeScript()` requires scripts return a primitive value
 (() => {
-  console.info('[dev-webext] Hello world from content script')
+  console.info('[your-popup] Hello world from content script')
 
   // communication example: send previous tab title from background page
   onMessage('tab-prev', ({ data }) => {
-    console.log(`[dev-webext] Navigate from page "${data.title}"`)
+    console.log(`[your-popup] Navigate from page "${data.title}"`)
   })
 
   // mount component to context window
