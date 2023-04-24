@@ -16,7 +16,6 @@ import { appBcId } from '~/logic/storage'
     <div class="mt-4">
       Powered by
       <a href="https://github.com/YunYouJun" target="_blank">@YunYouJun</a>
-      <ri-device-line class="align-middle inline-block" />
     </div>
   </main>
 </template>

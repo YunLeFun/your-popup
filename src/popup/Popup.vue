@@ -4,6 +4,7 @@ import { consola } from 'consola'
 import EventButtonGroup from './EventButtonGroup.vue'
 import { getActiveTab } from './utils'
 import type { DevEvent } from '~/types'
+import { appBcId } from '~/logic'
 
 async function openOptionsPage() {
   browser.runtime.openOptionsPage()
@@ -32,7 +33,10 @@ onMounted(async () => {
 <template>
   <main class="w-[300px] px-4 py-5 text-center text-gray-700">
     <Logo />
-    <div>Dev WebExt</div>
+    <div>Your Popup </div>
+    <div>
+      <span op="70" text="xs">{{ appBcId }}</span>
+    </div>
     <!-- <SharedSubtitle /> -->
 
     <button class="btn mt-2" @click="openOptionsPage">

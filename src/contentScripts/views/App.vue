@@ -38,7 +38,7 @@ bc.onmessage = async (event) => {
       }
       else {
         afBc.value?.postMessage({
-          name: request.key,
+          key: request.key,
         })
       }
 
@@ -62,7 +62,7 @@ bc.onmessage = async (event) => {
       :class="show ? 'opacity-100' : 'opacity-0'"
     >
       <h1 class="text-lg">
-        Dev WebExt
+        Your Popup
       </h1>
       <SharedSubtitle />
     </div>

@@ -1,12 +1,15 @@
 /* eslint-disable no-console */
 import { onMessage } from 'webext-bridge'
 import { createApp } from 'vue'
+import consola from 'consola'
 import App from './views/App.vue'
 import { setupApp } from '~/logic/common-setup'
 
+import './index.css'
+
 // Firefox `browser.tabs.executeScript()` requires scripts return a primitive value
 (() => {
-  console.info('[your-popup] Hello world from content script')
+  consola.success('[content script]', '[your-popup]', 'Enabled')
 
   // communication example: send previous tab title from background page
   onMessage('tab-prev', ({ data }) => {

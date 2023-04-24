@@ -1,19 +1,37 @@
-# WebExtension Vite Starter
+# Your Popup (webext)
 
-A [Vite](https://vitejs.dev/) powered WebExtension ([Chrome](https://developer.chrome.com/docs/extensions/reference/), [FireFox](https://addons.mozilla.org/en-US/developers/), etc.) starter template.
+Register Popup in your browser.
 
-## Pre-packed
+## Why your-popup?
 
-### WebExtension Libraries
-
-- [`webextension-polyfill`](https://github.com/mozilla/webextension-polyfill) - WebExtension browser API Polyfill with types
-- [`webext-bridge`](https://github.com/antfu/webext-bridge) - effortlessly communication between contexts
-
-### Dev tools
-
-- [web-ext](https://github.com/mozilla/web-ext) - Streamlined experience for developing web extensions
+When dev.
 
 ## Usage
+
+可参考 [demo](./demo) 项目用法。
+
+- 拷贝 `demo/src/popup` 文件夹内容
+- 在项目 `main` 中（开发环境）引入 `popup` `register`
+
+```ts
+// main.ts
+// register only when in development
+if (import.meta.env.DEV) {
+  import('./popup').then(({ register }) => {
+    register({
+      customBcId: 'custom',
+    })
+  })
+}
+```
+
+> `customBcId` 可自定义，并保持与 popup option page 中配置一致。
+
+## Thanks
+
+- [vitesse-webext](https://github.com/antfu/vitesse-webext)
+
+## Pre-packed
 
 ### Folders
 

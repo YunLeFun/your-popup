@@ -1,10 +1,10 @@
 {
   "name": "your-popup",
-  "displayName": "Dev WebExt",
+  "displayName": "Your Popup",
   "version": "0.0.1",
   "private": true,
   "packageManager": "pnpm@7.29.0",
-  "description": "[description]",
+  "description": "Custom popup for your browser",
   "scripts": {
     "demo": "pnpm -C demo run dev",
     "dev": "npm run clear && cross-env NODE_ENV=development run-p dev:*",
