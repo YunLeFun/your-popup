@@ -7,6 +7,8 @@
 
 Register Popup in your browser.
 
+> Helps developers to quickly invoke logic through popup when they were developing.
+
 ![Preview](https://user-images.githubusercontent.com/25154432/234032515-70f24a0d-e405-49d4-84c5-8002ff9d573a.jpg)
 
 ![usage](https://user-images.githubusercontent.com/25154432/234032965-19c37bd8-f1e2-496b-9c45-a67dfd1c001e.gif)
@@ -23,9 +25,6 @@ The form of the popup plug-in can avoid blocking the content of the page and doe
 ## Usage
 
 For details, see [demo](./demo) project usage.
-
-- 拷贝 `demo/src/popup` 文件夹内容
-- 在项目 `main.ts` 主入口（开发环境）引入 `popup` `register`
 
 - Copy the contents of the `demo/src/popup` folder
 - Introduce `popup` `register` in project `main.ts` (development environment)

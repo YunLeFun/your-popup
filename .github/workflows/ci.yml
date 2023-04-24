@@ -39,6 +39,10 @@ jobs:
       - name: Install
         run: pnpm install
 
+      # build types for check
+      - name: Build
+        run: pnpm run build
+
       - name: Typecheck
         run: pnpm run typecheck
 
@@ -62,4 +66,4 @@ jobs:
           cache: pnpm
 
       - run: pnpm install
-      - run: pnpm run test:unit
+      - run: pnpm run test
