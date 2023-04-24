@@ -24,6 +24,7 @@
     "clear": "rimraf --glob extension/dist extension/manifest.json extension.*",
     "lint": "eslint --cache .",
     "test": "vitest test",
+    "typecheck": "tsc --noEmit",
     "postinstall": "simple-git-hooks"
   },
   "devDependencies": {
