@@ -12,9 +12,8 @@ Register Popup in your browser.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/25154432/234032515-70f24a0d-e405-49d4-84c5-8002ff9d573a.jpg" alt="Preview" width="250" />
+<img src="https://user-images.githubusercontent.com/25154432/234032965-19c37bd8-f1e2-496b-9c45-a67dfd1c001e.gif" alt="usage" />
 </p>
-
-![usage](https://user-images.githubusercontent.com/25154432/234032965-19c37bd8-f1e2-496b-9c45-a67dfd1c001e.gif)
 
 ## Why your-popup?
 
