@@ -1,7 +1,7 @@
 {
   "name": "your-popup",
   "displayName": "Your Popup",
-  "version": "0.0.1",
+  "version": "0.0.2-beta.0",
   "private": true,
   "packageManager": "pnpm@8.3.1",
   "description": "Custom popup for your browser",
