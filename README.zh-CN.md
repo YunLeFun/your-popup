@@ -1,5 +1,9 @@
 # Your Popup (webext)
 
+![Chrome Web Store](https://img.shields.io/chrome-web-store/v/kjadfoikckkkbdnkkfglbpbemiajbnfl)
+
+（审核中...）
+
 <p align='center'>
 <a href="https://github.com/YunLeFun/your-popup/blob/main/README.md">English</a> | <b>简体中文</b>
 </p>
@@ -13,6 +17,10 @@ Register Popup in your browser.
 <br />
 <img src="https://user-images.githubusercontent.com/25154432/234042320-bd8b5e66-3f48-4c45-8636-d220a3726d85.gif" alt="usage" />
 </p>
+
+前往 [Chrome 商店](https://chrome.google.com/webstore/) 安装 [your-popup](https://chrome.google.com/webstore/) 并查看 [demo](https://your-popup.yunle.fun/) 页面。
+
+> 你也可以在 [release](https://github.com/YunLeFun/your-popup/releases) 中找到 `your-pop.crx`/`your-pop.zip`/`your-popup`文件下载并手动安装。
 
 ## Why your-popup?
 
