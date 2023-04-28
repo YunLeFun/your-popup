@@ -20,7 +20,6 @@ export async function getManifest() {
     options_ui: {
       page: './dist/options/index.html',
       open_in_tab: true,
-      chrome_style: false,
     },
     background: {
       page: './dist/background/index.html',

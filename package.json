@@ -1,7 +1,7 @@
 {
   "name": "your-popup",
   "displayName": "Your Popup",
-  "version": "0.0.2-beta.0",
+  "version": "0.0.1",
   "private": true,
   "packageManager": "pnpm@8.3.1",
   "description": "Custom popup for your browser",
@@ -31,10 +31,10 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.38.5",
-    "@ffflorian/jszip-cli": "^3.4.0",
+    "@ffflorian/jszip-cli": "^3.4.1",
     "@iconify-json/ri": "^1.1.8",
     "@types/fs-extra": "^11.0.1",
-    "@types/node": "^18.16.1",
+    "@types/node": "^18.16.2",
     "@types/webextension-polyfill": "^0.10.0",
     "@typescript-eslint/eslint-plugin": "^5.59.1",
     "@unocss/reset": "^0.51.8",
