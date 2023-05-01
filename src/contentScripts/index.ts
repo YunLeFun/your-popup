@@ -5,8 +5,6 @@ import consola from 'consola'
 import App from './views/App.vue'
 import { setupApp } from '~/logic/common-setup'
 
-import './index.css'
-
 // Firefox `browser.tabs.executeScript()` requires scripts return a primitive value
 (() => {
   consola.success('[content script]', '[your-popup]', 'Enabled')

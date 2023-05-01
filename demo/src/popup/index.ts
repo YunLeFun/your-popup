@@ -1,12 +1,14 @@
 import { events } from './events'
 
+const WEBEXT_ID = 'your-popup'
+
 /**
  * register popup ui
  */
 export function registerPopup() {
-  const popupBc = new BroadcastChannel('your-popup')
+  const popupBc = new BroadcastChannel(WEBEXT_ID)
   popupBc.postMessage({
-    type: 'your-popup',
+    type: WEBEXT_ID,
     name: 'register',
     events: events.map((event) => {
       return {

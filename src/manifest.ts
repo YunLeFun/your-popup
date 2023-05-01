@@ -13,7 +13,7 @@ export async function getManifest() {
     name: pkg.displayName || pkg.name,
     version: pkg.version,
     description: pkg.description,
-    browser_action: {
+    action: {
       default_icon: './assets/icon.png',
       default_popup: './dist/popup/index.html',
     },
@@ -22,8 +22,7 @@ export async function getManifest() {
       open_in_tab: true,
     },
     background: {
-      page: './dist/background/index.html',
-      persistent: false,
+      service_worker: './dist/background/index.js',
     },
     icons: {
       16: './assets/icon.png',
@@ -37,13 +36,17 @@ export async function getManifest() {
       'http://*/',
       'https://*/',
     ],
-    content_scripts: [{
-      matches: ['http://*/*', 'https://*/*'],
-      js: ['./dist/contentScripts/index.global.js'],
-    }],
-    web_accessible_resources: [
-      'dist/contentScripts/style.css',
+    content_scripts: [
+      {
+        matches: [
+          '<all_urls>',
+        ],
+        js: [
+          'dist/contentScripts/index.global.js',
+        ],
+      },
     ],
+    web_accessible_resources: [],
   }
 
   if (isDev) {

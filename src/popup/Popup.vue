@@ -12,12 +12,6 @@ async function openOptionsPage() {
 
 const eventsList = ref<DevEvent[]>()
 
-browser.runtime.onMessage.addListener((req, sender, sendResponse) => {
-  eventsList.value = req.eventsList
-  // @ts-expect-error resp
-  sendResponse('Get EventsList')
-})
-
 onMounted(async () => {
   const activeTabId = await getActiveTab()
   if (!activeTabId)
@@ -27,6 +21,7 @@ onMounted(async () => {
     name: 'mounted',
   })
   consola.info(res)
+  eventsList.value = res
 })
 </script>
 

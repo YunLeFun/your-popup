@@ -3,12 +3,12 @@
 // import 'uno.css'
 
 import { appBcId } from '~/logic'
-import type { DevEvent } from '~/types'
+import { WEBEXT_ID } from '~/constants'
 
 // const [show, toggle] = useToggle(false)
 // widget in html
 
-const bc = new BroadcastChannel('your-popup')
+const bc = new BroadcastChannel(WEBEXT_ID)
 
 // todo refactor
 const afBc = computed<BroadcastChannel>(() => {
@@ -17,35 +17,24 @@ const afBc = computed<BroadcastChannel>(() => {
   return new BroadcastChannel(appBcId.value)
 })
 
-async function sendEventList(eventsList: DevEvent[]) {
-  await browser.runtime.sendMessage({
-    eventsList,
-  })
-}
+let events: any[] = []
 
 browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
-  // @ts-expect-error resp
-  sendResponse('[content-script] Get event from popup')
+  if (request.name === 'mounted') {
+    // @ts-expect-error resp
+    sendResponse(events)
+  }
+  else {
+    afBc.value?.postMessage({
+      key: request.key,
+    })
+  }
 })
 
 bc.onmessage = async (event) => {
   const { data } = event
-  if (data.type === 'your-popup' && data.name === 'register') {
-    // register onMessage
-    browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
-      if (request.name === 'mounted') {
-        sendEventList(data.events)
-      }
-      else {
-        afBc.value?.postMessage({
-          key: request.key,
-        })
-      }
-
-      // @ts-expect-error resp
-      sendResponse('[content-script] Get mounted from popup')
-    })
-  }
+  if (data.type === WEBEXT_ID && data.name === 'register')
+    events = data.events
 }
 
 // Chrome提供的大部分API是不支持在content_scripts中运行

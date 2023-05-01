@@ -1,6 +1,3 @@
-<script setup lang="ts">
-</script>
-
 <template>
   <div>
     <a href="https://github.com/YunLeFun/your-popup" target="_blank">
