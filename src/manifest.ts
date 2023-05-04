@@ -32,7 +32,6 @@ export async function getManifest() {
     permissions: [
       'tabs',
       'storage',
-      'activeTab',
       'http://*/',
       'https://*/',
     ],
