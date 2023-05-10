@@ -1,6 +1,6 @@
 # Your Popup (webext)
 
-![Chrome Web Store](https://img.shields.io/chrome-web-store/v/kjadfoikckkkbdnkkfglbpbemiajbnfl)
+[![Chrome Web Store](https://img.shields.io/chrome-web-store/v/kjadfoikckkkbdnkkfglbpbemiajbnfl)](https://chrome.google.com/webstore/detail/your-popup/kjadfoikckkkbdnkkfglbpbemiajbnfl)
 
 （Under review...）
 
